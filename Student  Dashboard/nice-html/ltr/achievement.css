@@ -1,0 +1,19 @@
+.prog{
+	width: 100%;
+	height: 20px;
+	background-color: lightgrey;
+	border-radius: 40px;
+}
+
+.prog-com{
+	width: 100%;
+	height: 20px;
+	background-color: #5eb659;
+	border-radius: 40px;
+}
+.prog-in{
+	width: 40%;
+	height: 20px;
+	background-color:#5923af;
+	border-radius: 40px;
+}

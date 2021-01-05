@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Nice admin lite design, Nice admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="Nice Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Student Detail</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/niceadmin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.ico">
+    <!-- Custom CSS -->
+
+    <link href="../../dist/css/MYCOURSES.css" rel="stylesheet">
+    <link href="../../dist/css/style.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" type="text/css" href="studentdetail.css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+  
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #ff7f64;
+    padding-left: 12px;
+    line-height: 40px;
+  }
+  
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  .dropdown-btn:hover{
+    border-left: 2px solid #137eff;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+ }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 16px;}
+  }
+  
+  
+  /*    for colora*/
+  
+  .sidebar-nav>#sidebarnav>.sidebar-item>.sidebar-link:hover {
+          background: rgba(0,0,0,.1);
+          
+      }
+      
+      .sidebar-nav ul .sidebar-item.selected>.sidebar-link {
+          background: rgba(0,0,0,.1);
+          color: #fff;
+      }
+      .sidebar-nav ul .sidebar-item .sidebar-link{
+          opacity: 0.9;
+      }
+      body{
+           color: black; 
+      }
+      .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #ff7f64;;
+    border-color: #ff7f64;;
+}
+    
+    .abc{
+  border-left: 2px solid #137eff;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff; 
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .abc{
+         background: rgba(0, 0, 0, 0.0);
+    }
+    .dropdown-container{
+      line-height: 15px;
+    }
+}  
+      </style>
+
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" style="background-color: #ff7f64;" data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full"
+        data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header" data-logobg="skin5" style="background-color: #ff7f64;">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none javascript:void(0)" style="color: white;">
+                        <i class="ti-menu ti-close"></i>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand" style="background-color: #ff7f64;">
+                        <a href="index (5).html" class="logo" >
+                            <!-- Logo icon -->
+                            <b class="logo-icon">
+                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                                <!-- Dark Logo icon -->
+                                <div>
+                                <img src="../../assets/images/nlogb2f.png" alt="homepage" class="dark-logo"  /></div>
+                                <!-- Light Logo icon -->
+                                <img src="../../assets/images/nlogb2f.png" alt="homepage" width="100%" class="light-logo" />
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text
+                            <span class="logo-text"-->
+                                <!-- dark Logo text 
+                                <img src="../../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                             Light Logo text -->
+                            <!--    <img src="../../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                            </span>-->
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ti-more"></i>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item search-box">
+                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
+                                <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                    <div class="ml-1 d-none d-sm-block">
+                                        <span>Search</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <form class="app-search position-absolute">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter">
+                                <a class="srh-btn">
+                                    <i class="ti-close"></i>
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle"
+                                    width="31"></a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i>
+                                    My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                    Inbox</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin5" style="background-color: #ff7f64;">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar" style="background-color: #ff7f64;">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav" style="background-color: #ff7f64;">
+                    <ul id="sidebarnav" style="background-color: #ff7f64;">
+                        <br>
+                        <li class="sidebar-item abc">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index (5).html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-av-timer"></i>
+                                <span class="hide-menu">My Courses</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="tp.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-account-network"></i>
+                                <span class="hide-menu">Profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-basic.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-arrange-bring-forward"></i>
+                                <span class="hide-menu">Create Course</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link dropdown-btn " href="#"
+                               aria-expanded="false">
+                               <i class="mdi mdi-file-multiple"></i>
+                               <span class="hide-menu" style="font-size: 0.875rem;">   My files</span>
+                                <i class="fa fa-caret-down"></i>
+                               <div class="dropdown-container  " style="margin-top: -1.5rem;font-size: 0.875rem;">
+                                   <a href="video.html" style="color: #f1f1f1;  margin: 7%;padding: 0.3rem 1rem;" > <span class="hide-menu">  <i class="mdi mdi-camcorder-box Videos" > </i>&nbsp;Videos</span></a><br>
+                                   <a href="g1.html" style="color: #f1f1f1; margin: 7%;padding: 0.3rem 1rem;">  <span class="hide-menu"> <i class=" mdi mdi-camera-party-mode Gallery"></i>&nbsp;&nbsp;Gallery</span></a><br>
+                                   <a href="audio.html" style="color: #f1f1f1; margin: 7%;padding: 0.3rem 1rem;">  <span class="hide-menu"><i class=" mdi mdi-bookmark-music Audios"></i> &nbsp;Audio</span></a>
+                                 </div>
+                           </a> 
+                          
+               
+                      
+                       </li>
+  
+                        
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper mt-5 pt-4" style="background-color: #fff8ee; margin-top: 5%;">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">Student Details</h4>
+                    </div>
+                    <div class="col-7 align-self-center">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="index (5).html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Student Details</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row" style="background-color: white;">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center">Lorem Ipsum</h2>
+                                <h3 class="text-center">Number of Students enrolled : <span>250</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                       <table class="tab shadow" >
+                           <thead >
+                                <th >S.No</th>
+                                <th >ID</th>
+                                <th >Name</th>
+                                <th >Progress</th>                               
+                           </thead>
+                           <tbody>
+                               <tr >
+                                   <td data-label="S.No">1</td>
+                                   <td data-label="ID">12345</td>
+                                   <td data-label="Name">Umang Sadhwani</td>
+                                   <td data-label="Progress">
+                                       <div class="progress mx-md-3" >
+                                           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%;">80%</div>
+                                       </div>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td data-label="S.No">2</td>
+                                   <td data-label="ID">16845</td>
+                                   <td data-label="Name">Sonali Tomar</td>
+                                   <td data-label="Progress">
+                                        <div class="progress mx-md-3" >
+                                           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%;">80%</div>
+                                       </div>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td data-label="S.No">3</td>
+                                   <td data-label="ID">16795</td>
+                                   <td data-label="Name">Utkarsh Pathak</td>
+                                   <td data-label="Progress">
+                                        <div class="progress mx-md-3" >
+                                           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%;">80%</div>
+                                       </div>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td data-label="S.No">4</td>
+                                   <td data-label="ID">12485</td>
+                                   <td data-label="Name">Anjali Chouhan</td>
+                                   <td data-label="Progress">
+                                        <div class="progress mx-md-3" >
+                                           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%;">100%</div>
+                                       </div>
+                                   </td>
+                               </tr>
+                               <tr >
+                                   <td data-label="S.No">5</td>
+                                   <td data-label="ID">12345</td>
+                                   <td data-label="Name">Umang Sadhwani</td>
+                                   <td data-label="Progress">
+                                       <div class="progress mx-md-3" >
+                                           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%;">80%</div>
+                                       </div>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td data-label="S.No">6</td>
+                                   <td data-label="ID">16845</td>
+                                   <td data-label="Name">Sonali Tomar</td>
+                                   <td data-label="Progress">
+                                        <div class="progress mx-md-3" >
+                                           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%;">85%</div>
+                                       </div>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td data-label="S.No">7</td>
+                                   <td data-label="ID">16795</td>
+                                   <td data-label="Name">Utkarsh Pathak</td>
+                                   <td data-label="Progress">
+                                        <div class="progress mx-md-3" >
+                                           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%;">75%</div>
+                                       </div>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td data-label="S.No">8</td>
+                                   <td data-label="ID">12485</td>
+                                   <td data-label="Name">Lorem Ipsum</td>
+                                   <td data-label="Progress">
+                                        <div class="progress mx-md-3" >
+                                           <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;">50%</div>
+                                       </div>
+                                   </td>
+                               </tr>
+                           </tbody>
+                       </table>
+                       <br>
+                       <br>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <!--<footer class="footer text-center">
+                All Rights Reserved by Nice admin. Designed and Developed by
+                <a href="https://wrappixel.com">WrapPixel</a>.
+            </footer>-->
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.min.js"></script>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+</body>
+
+</html>

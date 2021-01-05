@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Nice admin lite design, Nice admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="Nice Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>audio</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/niceadmin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.ico">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../../dist/css/MYCOURSES.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+<![endif]-->
+
+<style>
+   /* body {
+  font-family: "Lato", sans-serif;
+} */
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #6a7a8c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 0.785rem;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #233242;
+  padding-left: 12px;
+  line-height: 40px;
+}
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
+}
+
+
+/* Font Family
+================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+
+/* Global Styles
+================================================== */
+/*
+Skeleton v1.2
+Copyright: Dave Gamache
+www.getskeleton.com
+Free to use under the MIT license.
+https://www.opensource.org/licenses/mit-license.php
+Modifications by Mark Hillard
+*/
+
+
+/* Font Family
+================================================== */
+/* @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400"); */
+
+
+/* Desktop (960px)
+================================================== */
+.container { position:relative; width:960px; margin:0 auto; padding:0; }
+.container .columns { float:left; display:inline; margin-left:10px; margin-right:10px; }
+.container .twelve.columns { width:700px; }
+.container .offset-by-two { padding-left:120px; }
+
+
+/* Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.container { width:768px; }
+.container .columns { margin-left:10px; margin-right:10px; }
+.container .twelve.columns { width:556px; }
+.container .offset-by-two { padding-left:96px; }
+}
+
+
+/* Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+.container { width:300px; }
+.container .columns { margin:0; }
+.container .twelve.columns { width:300px; }
+.container .offset-by-two { padding-left:0; }
+}
+
+
+/* Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container { width:420px; }
+.container .columns { margin:0; }
+.container .twelve.columns { width:420px; }
+}
+
+
+/* Self Clearing Goodness
+================================================== */
+.container:after {
+clear:both;
+content:"\0020";
+display:block;
+height:0;
+visibility:hidden;
+}
+
+
+/* CSS Reset
+================================================== */
+html,body,div,span,h1,h6,p,a,ul,li,audio {
+border:0;
+/* font:inherit; */
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+body { line-height:1; }
+ul { list-style:none; }
+
+
+/* Basic Styles
+================================================== */
+html,body {
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
+background-color:#111;
+color:#C8C7C8;
+font:18px/20px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight:300;
+}
+
+
+/* Typography
+================================================== */
+h1,h6,p { color:#808080; font-weight:300; }
+h1 { font-size:42px; line-height:44px; margin:20px 0 0; }
+h6 { font-size:18px; line-height:20px; margin:0 0 20px; }
+p { margin:0 0 20px; }
+
+
+/* Links
+================================================== */
+a,a:visited { color:#ddd; outline:0; text-decoration:none; }
+a:hover,a:focus { color:#bbb; }
+p a,p a:visited { line-height:inherit; }
+
+
+/* Misc.
+================================================== */
+.add-bottom { margin-bottom:20px !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+
+
+/* Custom Styles
+================================================== */
+html,body {
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
+background-color:#111;
+color:#C8C7C8;
+/* font:18px/20px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+font-weight:300;
+}
+
+/* CSS Transitions */
+* {
+-moz-transition:all 100ms ease;
+-o-transition:all 100ms ease;
+-webkit-transition:all 100ms ease;
+transition:all 100ms ease;
+}
+
+/* Highlight Styles */
+::selection { background-color:#262223; color:#444; }
+::-moz-selection { background-color:#262223; color:#444; }
+
+
+/* Audio Player Styles
+================================================== */
+
+/* Default - Firefox */
+audio { margin:0 15px; width:670px; }
+#audiowrap { background-color:#231F20; margin:0 auto; }
+#plwrap { margin:0 auto; }
+#tracks { min-height:66px; position:relative; text-align:center; text-decoration:none; top:16px; }
+#nowPlay { display:inline; }
+#npTitle { margin:0; padding:21px; text-align:right; }
+#npAction { padding:21px; }
+#plList { margin:0; }
+#plList li { background-color:#231F20; cursor:pointer; margin:0; padding:21px 0; }
+#plList li:hover { background-color:#262223; }
+.plItem { position:relative; }
+.plTitle { left:40px; overflow:hidden; position:absolute; right:65px; text-overflow:ellipsis; top:0; white-space:nowrap; }
+.plNum { padding-left:21px; width:25px; }
+.plLength { padding-left:21px; position:absolute; right:21px; top:0; }
+.plSel,.plSel:hover { background-color:#262223!important; cursor:default!important; }
+a[id^="btn"] { background-color:#231F20; color:#C8C7C8; cursor:pointer; font-size:50px; margin:0; padding:0 27px 11px; text-decoration:none; }
+a[id^="btn"]:last-child { margin-left:-3px; }
+a[id^="btn"]:hover,a[id^=btn]:active { background-color:#262223; }
+a[id^="btn"]::-moz-focus-inner { border:0; padding:0; }
+
+/* IE 9 */
+html[data-useragent*="MSIE 9.0"] audio { margin-left:9px; outline:none; width:680px; }
+html[data-useragent*="MSIE 9.0"] #audiowrap { background-color:#000; }
+html[data-useragent*="MSIE 9.0"] #tracks { min-height:59px; top:8px;}
+html[data-useragent*="MSIE 9.0"] a[id^="btn"] { background-color:#000; }
+html[data-useragent*="MSIE 9.0"] a[id^="btn"]:hover { background-color:#080808; }
+html[data-useragent*="MSIE 9.0"] #plList li { background-color:#000; }
+html[data-useragent*="MSIE 9.0"] #plList li:hover { background-color:#080808; }
+html[data-useragent*="MSIE 9.0"] .plSel,
+html[data-useragent*="MSIE 9.0"] .plSel:hover { background-color:#080808!important; }
+
+/* IE 10 */
+html[data-useragent*="MSIE 10.0"] audio { margin-left:6px; width:687px; }
+html[data-useragent*="MSIE 10.0"] #audiowrap { background-color:#000; }
+html[data-useragent*="MSIE 10.0"] #tracks { min-height:62px; top:11px;}
+html[data-useragent*="MSIE 10.0"] a[id^="btn"] { background-color:#000; }
+html[data-useragent*="MSIE 10.0"] a[id^="btn"]:hover { background-color:#080808; }
+html[data-useragent*="MSIE 10.0"] #plList li { background-color:#000; }
+html[data-useragent*="MSIE 10.0"] #plList li:hover { background-color:#080808; }
+html[data-useragent*="MSIE 10.0"] .plSel,
+html[data-useragent*="MSIE 10.0"] .plSel:hover { background-color:#080808!important; }
+
+/* IE 11 */
+html[data-useragent*="rv:11.0"] audio { margin-left:2px; width:695px; }
+html[data-useragent*="rv:11.0"] #audiowrap { background-color:#000; }
+html[data-useragent*="rv:11.0"] #tracks { min-height:62px; top:11px;}
+html[data-useragent*="rv:11.0"] a[id^="btn"] { background-color:#000; }
+html[data-useragent*="rv:11.0"] a[id^="btn"]:hover { background-color:#080808; }
+html[data-useragent*="rv:11.0"] #plList li { background-color:#000; }
+html[data-useragent*="rv:11.0"] #plList li:hover { background-color:#080808; }
+html[data-useragent*="rv:11.0"] .plSel,
+html[data-useragent*="rv:11.0"] .plSel:hover { background-color:#080808!important; }
+
+/* All Apple Products */
+html[data-useragent*="Apple"] #audiowrap { background-color:#000; }
+html[data-useragent*="Apple"] a[id^="btn"] { background-color:#000; }
+html[data-useragent*="Apple"] a[id^="btn"]:hover { background-color:#080808; }
+html[data-useragent*="Apple"] #plList li { background-color:#000; }
+html[data-useragent*="Apple"] #plList li:hover { background-color:#080808; }
+html[data-useragent*="Apple"] .plSel,
+html[data-useragent*="Apple"] .plSel:hover { background-color:#080808!important; }
+
+/* IOS 7 */
+html[data-useragent*="OS 7"] body { color:#373837; }
+html[data-useragent*="OS 7"] audio { margin-left:3px; width:690px; }
+html[data-useragent*="OS 7"] #tracks { min-height:77px; top:27px;}
+html[data-useragent*="OS 7"] #audiowrap { background-color:#e6e6e6; }
+html[data-useragent*="OS 7"] a[id^="btn"] { background-color:#e6e6e6; color:#373837; }
+html[data-useragent*="OS 7"] a[id^="btn"]:hover { background-color:#eee; }
+html[data-useragent*="OS 7"] #plList li { background-color:#e6e6e6; }
+html[data-useragent*="OS 7"] #plList li:hover { background-color:#eee; }
+html[data-useragent*="OS 7"] .plSel,
+html[data-useragent*="OS 7"] .plSel:hover { background-color:#eee!important; }
+
+/* Chrome */
+html[data-useragent*="Chrome"] audio { margin-left:6px; width:687px; }
+html[data-useragent*="Chrome"] #audiowrap { background-color:#131313; }
+html[data-useragent*="Chrome"] a[id^="btn"] { background-color:#131313; }
+html[data-useragent*="Chrome"] a[id^="btn"]:hover { background-color:#161616; }
+html[data-useragent*="Chrome"] #plList li { background-color:#131313; }
+html[data-useragent*="Chrome"] #plList li:hover { background-color:#161616; }
+html[data-useragent*="Chrome"] .plSel,
+html[data-useragent*="Chrome"] .plSel:hover { background-color:#161616!important; }
+
+
+/* Media Queries (Screen Width)
+================================================== */
+
+/* Tablet Portrait to Desktop (960px) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+audio { width:526px; }
+html[data-useragent*="MSIE 9.0"] audio { width:536px; }
+html[data-useragent*="MSIE 10.0"] audio { width:543px; }
+html[data-useragent*="rv:11.0"] audio { width:551px; }
+html[data-useragent*="OS 7"] audio { width:546px; }
+html[data-useragent*="Chrome"] audio { width:543px; }
+}
+
+/* Mobile Landscape to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+audio { width:390px; }
+html[data-useragent*="MSIE 9.0"] audio { width:400px; }
+html[data-useragent*="MSIE 10.0"] audio { width:407px; }
+html[data-useragent*="rv:11.0"] audio { width:415px; }
+html[data-useragent*="OS 7"] audio { width:410px; }
+html[data-useragent*="Chrome"] audio { width:407px; }
+
+#npAction { position:absolute; }
+#npTitle { width:261px; }
+}
+
+/* Mobile Portrait to Mobile Landscape */
+@media only screen and (max-width: 479px) {
+audio { width:270px; }
+html[data-useragent*="MSIE 9.0"] audio { width:280px; }
+html[data-useragent*="MSIE 10.0"] audio { width:287px; }
+html[data-useragent*="rv:11.0"] audio { width:295px; }
+html[data-useragent*="OS 7"] audio { width:290px; }
+html[data-useragent*="Chrome"] audio { width:287px; }
+
+#npAction { position:absolute; }
+#npTitle { width:156px; }
+}
+
+ .sidebar-nav>#sidebarnav>.sidebar-item>.sidebar-link:hover {
+    background: rgba(0,0,0,.1);
+    
+}
+
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link {
+    background: rgba(0,0,0,.1);
+    color: #fff;
+}
+.sidebar-nav ul .sidebar-item .sidebar-link{
+    opacity: 0.9;
+}
+.abc{
+  border-left: 2px solid #137eff;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff; 
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .abc{
+         background: rgba(0, 0, 0, 0.0);
+    }
+   .dropdown-container{
+        line-height: 15px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full"
+        data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header" data-logobg="skin5">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+                        <i class="ti-menu ti-close"></i>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <a href="index.html" class="logo">
+                            <!-- Logo icon -->
+                            <b class="logo-icon">
+                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                                <!-- Dark Logo icon -->
+                                <img src="../../assets/images/nlogb2.png" alt="homepage" class="dark-logo" />
+                                <!-- Light Logo icon -->
+                                <img src="../../assets/images/nlogb2f.png " style="width: 100%;" alt="homepage" class="light-logo" />
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+                            <span class="logo-text">
+                                <!-- dark Logo text -->
+                                <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                                Light Logo text -->
+                               <!-- <img src="../../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
+                            </span>
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ti-more"></i>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item search-box">
+                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
+                                <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                    <div class="ml-1 d-none d-sm-block">
+                                        <span>Search</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <form class="app-search position-absolute">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter">
+                                <a class="srh-btn">
+                                    <i class="ti-close"></i>
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle"
+                                    width="31"></a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i>
+                                    My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                    Inbox</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <br>
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html"
+                                aria-expanded="false">
+                               <i class="mdi mdi-book-open-page-variant"></i> 
+                              
+                                <span class="hide-menu  " style="font-size: 0.785rem;">   My Courses </span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pages-profile.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-account-network"></i>
+                                
+                                <span class="hide-menu" style="font-size: 0.785rem;"> Profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="achievements.html"
+                                aria-expanded="false">
+                               <i class="mdi mdi-trophy-variant"></i> 
+                               
+                                <span class="hide-menu" style="font-size: 0.785rem;">  Achievements</span>
+                            </a>
+                        </li>
+                        <!-- <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="table-basic.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-border-none"></i>
+                                <span class="hide-menu">Table</span>
+                            </a>
+                        </li> -->
+                        <!-- <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="icon-material.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-face"></i>
+                                <span class="hide-menu">Icon</span>
+                            </a>
+                        </li> -->
+                        <!-- <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="starter-kit.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-file"></i>
+                                <span class="hide-menu">Blank</span>
+                            </a>
+                        </li> -->
+                        <li class="sidebar-item abc">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link dropdown-btn " href="#"
+                               aria-expanded="false">
+                               <i class="mdi mdi-file-multiple"></i>
+                               <span class="hide-menu" style="font-size: 0.8rem;">   My files</span>
+
+                               <div class="dropdown-container  " style="margin-top: -1.5rem;font-size: 0.8rem;">
+                                   <a href="video.html" style="color: #f1f1f1;  margin: 7%;padding: 0.3rem 1rem;" > <span class="hide-menu">  <i class="mdi mdi-camcorder-box Videos" > </i>&nbsp;Videos</span></a><br>
+                                   <a href="g1.html" style="color: #f1f1f1; margin: 7%;padding: 0.3rem 1rem;">  <span class="hide-menu"> <i class=" mdi mdi-camera-party-mode Gallery"></i>&nbsp;&nbsp;Gallery</span></a><br>
+                                   <a href="#" style="color: #f1f1f1; margin: 7%;padding: 0.3rem 1rem;">  <span class="hide-menu"><i class=" mdi mdi-bookmark-music Audios"></i> &nbsp;Audio</span></a>
+                                 </div>
+                           </a> 
+                          
+               
+                      
+                       </li>
+
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb mt-5 pt-5">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">Audio</h4>
+                    </div>
+                    <div class="col-7 align-self-center">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Audio</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+
+                <div class="pd-ltr-20 xs-pd-20-10">
+                    <div class="min-height-200px">
+
+                <div class="main-container">
+
+                    <div class="pd-ltr-20 xs-pd-20-10">
+                        <div class="min-height-200px ">
+                            <!-- <div class="page-header">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="title">
+                                            <h4>Gallery</h4>
+                                        </div>
+                                        <nav aria-label="breadcrumb" role="navigation">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Audio</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> -->
+
+    <div class="twelve columns offset-by-two">
+        <!-- <h1 class="center">HTML5 Audio Player</h1>
+        <h6 class="center">w/ responsive playlist</h6> -->
+    </div>
+    <div class="twelve columns offset-by-two add-bottom">
+    <div id="nowPlay">
+        <span class="left"  id="npAction" style=" margin-right:10px;">Paused...</span>
+        <span class="right" id="npTitle"></span>
+    </div>
+    <div id="audiowrap">
+        <div id="audio0">
+            <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+        </div>
+        <div id="tracks">
+            <a id="btnPrev">&laquo;</a>
+            <a id="btnNext">&raquo;</a>
+        </div>
+    </div>
+    <div id="plwrap">
+        <ul id="plList">
+            <li>
+                <div class="plItem">
+                    <div class="plNum">1.</div>
+                    <div class="plTitle">Ballade Pour Adeline (by Richard Clayderman)</div>
+                    <div class="plLength">2:39</div>
+                </div>
+            </li>
+            <li>
+                <div class="plItem">
+                    <div class="plNum">2.</div>
+                    <div class="plTitle">Recuerdos De La Alhambra (by Narciso Yepes)</div>
+                    <div class="plLength">3:01</div>
+                </div>
+            </li>
+            <li>
+                <div class="plItem ">
+                    <div class="plNum">3.</div>
+                    <div class="plTitle">Somewhere Over The Rainbow (by Impellitteri)</div>
+                    <div class="plLength">5:25</div>
+                </div>
+
+            </li>
+            <li>
+                <div class="plItem pb-5">
+                    <div class="plNum">4.</div>
+                    <div class="plTitle">Beli chi nagin nighali(by Impellitteri)</div>
+                    <div class="plLength">5:25</div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="twelve columns offset-by-two add-bottom pt-5">
+
+    </div>
+</div>
+<!--end main layout-->
+
+                </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+
+  <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+
+        // Mythium Archive: https://archive.org/details/mythium/
+
+// Make HTML5 <audio> tag work in all major browsers...
+// External File: https://api.html5media.info/1.1.6/html5media.min.js
+
+// Add user agent as an attribute on the <html> tag...
+// Inspiration: https://css-tricks.com/ie-10-specific-styles/
+var b = document.documentElement;
+b.setAttribute('data-useragent',  navigator.userAgent);
+b.setAttribute('data-platform', navigator.platform );
+
+// HTML5 audio player + playlist controls...
+// Inspiration: http://jonhall.info/how_to/create_a_playlist_for_html5_audio
+jQuery(function ($) {
+    var supportsAudio = !! document.createElement('audio').canPlayType;
+    if (supportsAudio) {
+        var index = 0,
+            playing = false;
+        mediaPath = 'https://archive.org/download/Best100InstrumentalSongs/',
+        extension = '',
+        tracks = [{
+            "track": 1,
+            "name": "Ballade Pour Adeline (by Richard Clayderman)",
+            "length": "02:39",
+            "file": "001-RichardClayderman-BalladePourAdeline"
+        }, {
+            "track": 2,
+            "name": "Recuerdos De La Alhambra (by Narciso Yepes)",
+            "length": "03:01",
+            "file": "010-NarcisoYepes-RecuerdosDeLaAlhambra"
+        }, {
+            "track": 3,
+            "name": "Somewhere Over The Rainbow (by Impellitteri)",
+            "length": "05:25",
+            "file": "026-Impellitteri-SomewhereOverTheRainbow"
+        }],
+        trackCount = tracks.length,
+        npAction = $('#npAction'),
+        npTitle = $('#npTitle'),
+        audio = $('#audio1').bind('play', function () {
+            playing = true;
+            npAction.text('Now Playing...');
+        }).bind('pause', function () {
+            playing = false;
+            npAction.text('Paused...');
+        }).bind('ended', function () {
+            npAction.text('Paused...');
+            if ((index + 1) < trackCount) {
+                index++;
+                loadTrack(index);
+                audio.play();
+            } else {
+                audio.pause();
+                index = 0;
+                loadTrack(index);
+            }
+        }).get(0),
+        btnPrev = $('#btnPrev').click(function () {
+            if ((index - 1) > -1) {
+                index--;
+                loadTrack(index);
+                if (playing) {
+                    audio.play();
+                }
+            } else {
+                audio.pause();
+                index = 0;
+                loadTrack(index);
+            }
+        }),
+        btnNext = $('#btnNext').click(function () {
+            if ((index + 1) < trackCount) {
+                index++;
+                loadTrack(index);
+                if (playing) {
+                    audio.play();
+                }
+            } else {
+                audio.pause();
+                index = 0;
+                loadTrack(index);
+            }
+        }),
+        li = $('#plList li').click(function () {
+            var id = parseInt($(this).index());
+            if (id !== index) {
+                playTrack(id);
+            }
+        }),
+        loadTrack = function (id) {
+            $('.plSel').removeClass('plSel');
+            $('#plList li:eq(' + id + ')').addClass('plSel');
+            npTitle.text(tracks[id].name);
+            index = id;
+            audio.src = mediaPath + tracks[id].file + extension;
+        },
+        playTrack = function (id) {
+            loadTrack(id);
+            audio.play();
+        };
+        extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : '';
+        loadTrack(index);
+    }
+});
+        </script>
+</body>
+
+</html>

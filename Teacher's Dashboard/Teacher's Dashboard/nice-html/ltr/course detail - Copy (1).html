@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Nice admin lite design, Nice admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="Nice Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>course-details</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/niceadmin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.ico">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.css" rel="stylesheet">
+    <link href="../../dist/css/MYCOURSES.css" rel="stylesheet">
+    <!-- Slick CSS -->
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider arrow skin 106 css*/
+        .jssora106 {display:block;position:absolute;cursor:pointer;}
+        .jssora106 .c {fill:#fff;opacity:.3;}
+        .jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+        .jssora106:hover .c {opacity:.5;}
+        .jssora106:hover .a {opacity:.8;}
+        .jssora106.jssora106dn .c {opacity:.2;}
+        .jssora106.jssora106dn .a {opacity:1;}
+        .jssora106.jssora106ds {opacity:.3;pointer-events:none;}
+
+        /*jssor slider thumbnail skin 101 css*/
+        .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+        .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+        .jssort101 .p:hover{padding:2px;}
+        .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+        .jssort101 .p:hover.pdn{padding:0;}
+        .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+        .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+        .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+        .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+
+        .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  #6a7a8c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #ff7f64;
+  padding-left: 12px;
+  line-height: 40px;
+}
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.btn-primary{
+     background-color:#ff7f64;
+    color: white; 
+    border-color: #ff7f64;
+}
+.btn-primary:hover{
+     background-color:#ff7e72;
+    color: white; 
+    border-color: #ff7e72;
+}
+
+.btn-outline-primary{
+    border-color: #ff7f64;
+    color: #ff7f64;
+ }
+
+ .btn-outline-primary:hover{
+    background-color:#ff7f64;
+    color: white; 
+    border-color: #ff7f64;
+  }
+
+   .dropdown-btn:hover{
+    border-left: 2px solid #137eff;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+ }
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
+}
+
+/* for color */
+.sidebar-nav>#sidebarnav>.sidebar-item>.sidebar-link:hover {
+    background: rgba(0,0,0,.1);
+    
+}
+
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link {
+    background: rgba(0,0,0,.1);
+    color: #fff;
+}
+.sidebar-nav ul .sidebar-item .sidebar-link{
+	opacity: 0.9;
+}
+ 
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #ff7f64;;
+    border-color: #ff7f64;;
+}
+.abc{
+  border-left: 2px solid #137eff;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff; 
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .abc{
+         background: rgba(0, 0, 0, 0.0);
+    }
+    .dropdown-container{
+      line-height: 15px;
+    }
+}
+</style>
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" style="background-color: #ff7f64;"data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full"
+        data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header" data-logobg="skin5" style="background-color: #ff7f64;">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+                        <i class="ti-menu ti-close"></i>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand" style="background-color: #ff7f64;">
+                        <a href="index (5).html" class="logo">
+                            <!-- Logo icon -->
+                            <b class="logo-icon">
+                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                                <!-- Dark Logo icon -->
+                                <img src="../../assets/images/nlogb2f.png" alt="homepage" class="dark-logo" />
+                                <!-- Light Logo icon -->
+                                <img src="../../assets/images/nlogb2f.png " style="width: 100%;" alt="homepage" class="light-logo" />
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+                            <span class="logo-text">
+                                <!-- dark Logo text -->
+                                <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                              Light Logo text -->
+                               <!-- <img src="../../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
+                            </span>
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ti-more"></i>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item search-box">
+                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
+                                <div class="d-flex align-items-center">
+                                    <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                    <div class="ml-1 d-none d-sm-block">
+                                        <span>Search</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <form class="app-search position-absolute">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter">
+                                <a class="srh-btn">
+                                    <i class="ti-close"></i>
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href=""
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle"
+                                    width="31"></a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i>
+                                    My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i>
+                                    My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i>
+                                    Inbox</a>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin5" style="background-color: #ff7f64;">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar" style="background-color: #ff7f64;">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav" style="background-color: #ff7f64;">
+                    <ul id="sidebarnav" style="background-color: #ff7f64;">
+                        <br>
+                        <li class="sidebar-item abc">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index (5).html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-av-timer" ></i>
+                                <span class="hide-menu" >My Courses</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="tp.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-account-network"></i>
+                                <span class="hide-menu">Profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-basic.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-arrange-bring-forward"></i>
+                                <span class="hide-menu">Create Course</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link dropdown-btn " href="#"
+                               aria-expanded="false">
+                               <i class="mdi mdi-file-multiple"></i>
+                               <span class="hide-menu" style="font-size: 0.875rem;">   My files</span>
+                                <i class="fa fa-caret-down"></i>
+                               <div class="dropdown-container  " style="margin-top: -1.5rem;font-size: 0.875rem;">
+                                   <a href="video.html" style="color: #f1f1f1;  margin: 7%;padding: 0.3rem 1rem;" > <span class="hide-menu">  <i class="mdi mdi-camcorder-box Videos" > </i>&nbsp;Videos</span></a><br>
+                                   <a href="g1.html" style="color: #f1f1f1; margin: 7%;padding: 0.3rem 1rem;">  <span class="hide-menu"> <i class=" mdi mdi-camera-party-mode Gallery"></i>&nbsp;&nbsp;Gallery</span></a><br>
+                                   <a href="audio.html" style="color: #f1f1f1; margin: 7%;padding: 0.3rem 1rem;">  <span class="hide-menu"><i class=" mdi mdi-bookmark-music Audios"></i> &nbsp;Audio</span></a>
+                                 </div>
+                           </a> 
+                          
+               
+                      
+                       </li>
+  
+                        
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>    <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper mt-lg-5 pt-lg-4" style="background-color: #fff8ee;">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb mt-5 pt-5">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title"> Course-Details</h4>
+                    </div>
+                    <div class="col-7 align-self-center">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="index (5).html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Course-Details</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                
+               
+                    <div class="min-height-200px">
+                        
+                        <div class="product-wrap">
+                            <div class="product-detail-wrap mb-30">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
+                                            <!-- Loading Screen -->
+                                            <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                                                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../../slider/img/spin.svg" />
+                                            </div>
+                                            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/031.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/031-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/032.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/032-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/033.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/033-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/034.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/034-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/035.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/035-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/036.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/036-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/037.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/037-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/038.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/038-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/039.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/039-s190x90.jpg" />
+                                                </div>
+                                                <div>
+                                                    <img data-u="image" src="../../slider/img/040.jpg" />
+                                                    <img data-u="thumb" src="../../slider/img/040-s190x90.jpg" />
+                                                </div>
+                                            </div><a data-scale="0" href="" style="display:none;position:absolute;">web animation</a>
+                                            <!-- Thumbnail Navigator -->
+                                            <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
+                                                <div data-u="slides">
+                                                    <div data-u="prototype" class="p" style="width:190px;height:90px;">
+                                                        <div data-u="thumbnailtemplate" class="t"></div>
+                                                        <svg viewbox="0 0 16000 16000" class="cv">
+                                                            <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                                                            <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                                                            <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Arrow Navigator -->
+                                            <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:30px;" data-scale="0.75">
+                                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                                    <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                                                    <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                                                    <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+                                                </svg>
+                                            </div>
+                                            <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:162px;right:30px;" data-scale="0.75">
+                                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                                    <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                                                    <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                                                    <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div class="product-detail-desc pd-20 card-box height-100-p">
+                                            <h4 class="mb-20 pt-20">Gufram Bounce Black</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            
+                                            
+                                            
+                                            <div class="row">
+                                                <div class="col-md-6 col-6">
+                                                    <a href="index (5).html" class="btn btn-primary btn-block">Go To Course</a>
+                                                </div>
+                                                <div class="col-md-6 col-6">
+                                                    <a href="starter-kit.html" class="btn btn-outline-primary btn-block">Student Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="mb-20">Other Courses</h4>
+                            <div class="product-list">
+                                <ul class="row">
+                                    <li class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="product-box">
+                                            <div class="producct-img"><img src="../../assets\images\MyCourses/product-img1.jpg" alt=""></div>
+                                            <div class="product-caption">
+                                                <h4><a href="#">Gufram Bounce Black</a></h4>
+                                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="product-box">
+                                            <div class="producct-img"><img src="../../assets\images\MyCourses/product-img2.jpg" alt=""></div>
+                                            <div class="product-caption">
+                                                <h4><a href="#">Gufram Bounce White</a></h4>
+                                                
+                                                <a href="#" class="btn btn-outline-primary">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="product-box">
+                                            <div class="producct-img"><img src="../../assets\images\MyCourses/product-img3.jpg" alt=""></div>
+                                            <div class="product-caption">
+                                                <h4><a href="#">Contrast Lace-Up Sneakers</a></h4>
+                                                <a href="#" class="btn btn-outline-primary">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="product-box">
+                                            <div class="producct-img"><img src="../../assets\images\MyCourses/product-img4.jpg" alt=""></div>
+                                            <div class="product-caption">
+                                                <h4><a href="#">Contrast Lace-Up Sneakers</a></h4>
+                                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats   MY COURSES -->
+                <!-- ============================================================== -->
+                
+
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+    <!--slick slider-->
+    <script src="../../slider/js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $SpacingX: 5,
+                $SpacingY: 5
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+<!-- dropdown -->
+    <script>
+         var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+
+    </script>
+</body>
+
+</html>

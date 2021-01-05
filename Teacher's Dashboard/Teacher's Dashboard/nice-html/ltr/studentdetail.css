@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+}
+
+.tab{
+	width: 100%;
+}
+
+.tab td, .tab th{
+	border: 1px solid #ddd;
+	text-align: center;
+	font-size: 20px;
+}
+
+.tab th{
+	background-color: #ff7f64;
+	color: black;
+}
+thead th{
+	padding: 0.75rem;
+}
+tbody tr td{
+	color:black;
+	padding: 0.5rem;
+}
+.black{
+	color: black;
+	opacity: 1;
+}
+.sidebar-item a i{
+	color: white; 	 	
+}
+
+.tab tbody tr:nth-child(even){
+	background-color: #fff8ee;
+}
+.tab tbody tr:nth-child(odd){
+	background-color: #f6eade;
+}
+.progress{
+	height: 25px;
+	border-radius: 12px;
+}
+
+.progress-bar{
+	 background-color: #ff7f64; 
+	 border-radius: 12px;
+}
+
+/* responsive */
+
+@media(max-width: 600px){
+	.tab thead{
+		display: none;
+	}
+	.tab ,.tab tbody,.tab tr, .tab td{
+		display: block;
+		width: 100%;
+	}
+
+	.tab tr{
+		margin-bottom: 15px: 
+	}
+
+	.tab td{
+		padding-left: 30%;
+		text-align: left;
+		position: relative;
+	}
+	.tab td::before{
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 15px;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: left; 
+	}
+}
+
+.sidebar-nav>#sidebarnav>.sidebar-item>.sidebar-link:hover {
+    background:rgba(0,0,0,.1);
+   
+}
+
+
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link {
+    background: rgba(0,0,0,.1);
+    color: #fff;
+}
+.sidebar-nav ul .sidebar-item .sidebar-link{
+	opacity: 0.9;
+}
