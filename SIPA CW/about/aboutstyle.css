@@ -55,7 +55,7 @@
     color: #fff;
   }
   
-  #call-to-action .cta-btn:hover {
+  #call-to-action .cta-btn:hover .btn {
     background:black;
     
   }
@@ -81,14 +81,20 @@
 
 }
 .bold{
-  margin:auto;
-  text-align: center !important;
-  justify-content: center !important;
-  position: relative;
+  
+  font-weight: bold;
+  line-height: 30px;
+  
 }
 .philosophy p{
     font-size: 18px;
     line-height: 29px;
+}
+.join-btn{
+ 
+}
+.join-btn:hover{
+  background-color: #000;
 }
 /*--------------------------------------------------------------
 # Footer

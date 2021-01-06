@@ -7,7 +7,7 @@
 
 
 header {
-    background: linear-gradient(rgba(224, 145, 147, 0.7), rgba(88, 78, 73, 0.7)), url(team.jpg) no-repeat center center fixed;
+    background:  linear-gradient(rgba(240, 25, 54, 0.568), rgba(243, 97, 30, 0.603)), url(team.jpg) no-repeat center center fixed;
     height: 70vh;
     background-position: center;
     background-size: cover;

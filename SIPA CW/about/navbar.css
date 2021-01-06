@@ -29,7 +29,7 @@
      
   }
   header {
-    background: linear-gradient(95deg, rgba(255, 94, 97, 0.390) 20%, rgba(255, 153, 102, 0.390) 80%), url(bg.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(240, 25, 54, 0.568), rgba(243, 97, 30, 0.603)), url(bg.jpg) no-repeat center center fixed;
     height: 70vh;
     background-position: center;
     background-size: cover;
