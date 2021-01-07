@@ -180,11 +180,6 @@ header {
 /*-------------------------NAVBAR------------------
 -------------------------------------------------*/
 
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-
 :root {
     --light-black: #2e2c2caf;
     --bggradient: linear-gradient(rgba(240, 25, 54, 0.7), rgba(243, 97, 30, 0.7));
@@ -2230,7 +2225,7 @@ h6 {
 /*---------team-------------------*/
 
 #team {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 #team .member {
@@ -2260,7 +2255,7 @@ h6 {
     right: 0;
     transition: 0.2s;
     padding: 15px 0;
-    background: rgba(29, 28, 41, 0.6);
+    background: linear-gradient(95deg, rgb(255, 94, 98) 20%, rgb(255, 153, 102) 80%);
 }
 
 #team .member .member-info-content {
