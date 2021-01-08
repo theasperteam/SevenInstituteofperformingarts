@@ -60,7 +60,12 @@ $(window).scroll(function () {
   let oTop = $(".aboutsection").offset().top - window.innerHeight;
   if ($(window).scrollTop() > 100) {
     navbar.addClass("sticky");
-  } else {
+    $(".nav-link").hover(function(){
+      $(this).css("color", "#616161");
+    }, function(){
+      $(this).css("color", "#fff");
+    });
+  }else {
     navbar.removeClass("sticky");
   }
 });

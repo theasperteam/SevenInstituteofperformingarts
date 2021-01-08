@@ -33,6 +33,7 @@ section {
     transition: all 1.5s ease;
 }
 
+
 header a {
     font-family: var(--Sniglet-font);
     font-size: 0.9em;
