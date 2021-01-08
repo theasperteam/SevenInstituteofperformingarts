@@ -127,7 +127,27 @@ button:focus {
     outline: none !important;
 }
 
-
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--bggradient);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--bggradient);
+  }
+  
+  
 /*-----------------------------------------------------------------------------------*/
 
 

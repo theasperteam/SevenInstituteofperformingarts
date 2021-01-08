@@ -40,7 +40,7 @@
           <div class="mr-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="../index.html">HOME
+              <a class="nav-link" href="index.html">HOME
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -54,6 +54,7 @@
                   <a href="../schools/dance.html">DANCE</a>
                   <a href="../schools/music.html">MUSIC</a>
                   <a href="../schools/acting.html">ACTING</a>
+                  <a href="../schools/arts.html">FINE ARTS</a>
                 </div>
               </div>
             </li>
@@ -64,6 +65,7 @@
                   <a href="../courses/dance_course.html">DANCE</a>
                   <a href="../courses/music_course.html">MUSIC</a>
                   <a href="../courses/acting_course.html">ACTING</a>
+                  <a href="../courses/finearts.html">FINE ARTS</a>
                 </div>
               </div>
             </li>
@@ -71,10 +73,10 @@
               <a class="nav-link" href="../team_sipa/index.html">TEAM</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../application/application_form.html">CONTACT</a>
+              <a class="nav-link" href="../contactus-sipa/index.html">CONTACT</a>
             </li>
           </ul>
-        </div>
+        </div>  
       </nav>
       <div class="container heading text-center" data-aos="zoom-in">
         <h1>ABOUT US</h1>
@@ -263,7 +265,7 @@
               <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="#">Apply</a>
+              <a class="cta-btn align-middle" href="../application/application_form.html">Apply</a>
             </div>
           </div>
   
@@ -448,16 +450,23 @@
   <script src="style/js/scripts.js"></script>
 
   <script>
-       let navbar = $(".navbar");
-    $(window).scroll(function () {
+let navbar = $(".navbar");
 
-if ($(window).scrollTop() > 20) {
-  navbar.addClass("sticky");
-  console.log("jhjhj");
-} else {
-  navbar.removeClass("sticky");
-}
+$(window).scroll(function () {
+  // get the complete hight of window
+  let oTop = $(".aboutsection").offset().top - window.innerHeight;
+  if ($(window).scrollTop() > 100) {
+    navbar.addClass("sticky");
+    $(".nav-link").hover(function(){
+      $(this).css("color", "#616161");
+    }, function(){
+      $(this).css("color", "#fff");
+    });
+  }else {
+    navbar.removeClass("sticky");
+  }
 });
+
   </script>
 </body>
 </html>

@@ -144,9 +144,7 @@ h6 {
   transition: all 1.5s ease;
 }
 
-.sticky a:hover{
-  color: #0a98c0;
-}
+
 
 :root {
 
@@ -761,7 +759,7 @@ header .container .col-md-7 p {
 }
 
 #team .member .social a:hover {
-      color: var(--bggradient);
+      color: var(--bggradient) !important;
 }
 
 #team .member .social i {
@@ -1264,6 +1262,9 @@ header .container .col-md-7 p {
 }
 
 @media (max-width: 768px) {
+  .testimonial{
+    max-width: 100% !important;
+  }
   .back-to-top {
     bottom: 15px;
   }
@@ -1275,6 +1276,21 @@ header .container .col-md-7 p {
   #faq #faq-list i {
     top: 13px;
   }
+
+  header .navbar-brand {
+    padding-left: 0rem;
+}
+
+header .row .col-md-7 {
+  padding: 7vmin 2vmin;
+  padding-bottom: 0vmin;
+}
+.top-header {
+  background: #ff512f;
+  height: auto; 
+  padding: 2rem 0rem 3rem 0rem;
+  background: var(--bggradient);
+}
 }
 
 @media (max-width: 767px) {
@@ -1303,12 +1319,26 @@ header .container .col-md-7 p {
   #footer .footer-top .social-links a {
     margin-bottom: 25px;
   }
+  header .row .col-md-7 {
+    padding: 12vmin 2vmin !important;
+  }
+}
+@media (max-width: 1024px) {
+header .navbar-brand {
+  padding-left:1rem;
+}
+header .row .col-md-7 {
+  padding: 7vmin 2vmin;
+  padding-bottom: 0vmin;
+}
+.top-header {
+  background: #ff512f;
+  height: auto; 
+  padding: 2rem 0rem 3rem 0rem;
+  background: var(--bggradient);
 }
 
-
-
-
-
+}
 
 
 

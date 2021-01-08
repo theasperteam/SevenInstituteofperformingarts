@@ -12,7 +12,6 @@
   background: rgba(0, 0, 0, 0.815);
   z-index: 9999;
   transition: all 1.5s ease;
-  height: 4rem !important;
 }
 
 .navbar{
@@ -38,6 +37,7 @@ padding-top: 200px;
 }
 
 header a {
+  text-decoration: none !important;
   font-family: var(--Sniglet-font);
   font-size: 0.9em;
   color: whitesmoke;
