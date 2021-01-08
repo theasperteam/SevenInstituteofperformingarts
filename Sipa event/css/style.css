@@ -171,7 +171,14 @@ ol {
 /*---------------------
   Commom elements
 -----------------------*/
-
+.sticky {
+	position: fixed !important;
+	top: 0 !important;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.815) !important;
+	z-index: 9999 !important;
+	transition: all 1.5s ease;
+  }
 /* buttons */
 
 .site-btn {
