@@ -3122,6 +3122,30 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 		width: 50px;
 		height: 50px;
 	}
+
+	
+.page-top-section {
+	height: 400px;
+	position: relative;
+	padding-top: 150px;
+	text-align: center;
+}
+
+.about-item .ai-icon {
+    float: none;
+	margin: auto;
+	margin-bottom: 0.5rem;
+}
+.spad {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about-item .ai-text {
+    overflow: hidden;
+    padding-top: 10px;
+    /* margin: auto; */
+	text-align: center;}
+	
 }
 
 @media (max-width: 420px) {
