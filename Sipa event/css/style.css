@@ -10,19 +10,57 @@
 /*----------------------------------------*/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 html,
 body {
 	height: 100%;
 	font-family: 'Poppins', sans-serif;
-
+	font-size: 16px;
+	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 
 }
-html {
-	scroll-behavior: smooth;
+
+p{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.fwsb{
+	font-weight: 500;
+
   }
+.fwb{
+  font-weight: 600;
+}
+
+.fwr{
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	color: #666666;
+}
+
+h1{
+	font-weight: 600;
+}
+
+h2{
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+
+h4{
+   font-size: 1.2rem;
+}
+
+.header-section li{
+	font-weight: 500;
+}
+
+/* html {
+	scroll-behavior: smooth;
+  } */
 /* width */
 ::-webkit-scrollbar {
 	width: 7px;
@@ -52,39 +90,10 @@ h5,
 h6 {
 	margin: 0;
 	color: #616161;
-	font-weight: 700;
 }
 
-h1 {
-	font-size: 70px;
-}
-
-h2 {
-
-	font-weight: 700;
-	font-size: 2rem;
-}
-
-h3 {
-	font-size: 26px;
-
-	font-weight: 700;
-}
-
-h4 {
-	font-size: 1.2rem;
-}
-
-h5 {
-	font-size: 18px;
-}
-
-h6 {
-	font-size: 15px;
-}
 
 p {
-	font-size: 15px;
 	color: #666666;
 	line-height: 1.8;
 }
@@ -144,8 +153,6 @@ ol {
 
 .section-title h2 {
 
-	font-weight: 600;
-	font-size: 40px;
 
 }
 
@@ -217,8 +224,7 @@ ol {
 .site-btn {
 	display: inline-block;
 	border: none;
-	font-size: 15px;
-	font-weight: 600;
+
 	min-width: 167px;
 	padding: 14px 30px;
 	border-radius: 50px;
@@ -444,7 +450,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .header-info i {
-	font-size: 17px;
+
 	color: #f65d5d;
 	margin-right: 10px;
 	position: relative;
@@ -516,9 +522,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding-right: 25px;
 }
 
-.language-select .current {
-	font-size: 15px;
-}
 
 .language-select:after {
 	margin-top: -1px;
@@ -563,8 +566,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .main-menu li>a {
 	display: block;
 	padding-bottom: 5px;
-	font-size: 15px;
-	font-weight: 500;
+
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -616,10 +618,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .main-menu .sub-menu li a {
-	font-size: 15px;
 	color: #666666;
 	text-transform: none;
-	font-weight: 500;
 	position: relative;
 	-webkit-transition: 0.4s;
 	-o-transition: 0.4s;
@@ -792,7 +792,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	position: absolute;
 	right: 0px;
 	top: 5px;
-	font-size: 23px;
 	color: #9999;
 	cursor: pointer;
 	padding: 5px;
@@ -882,7 +881,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .insta-imgs .insta-hover i {
-	font-size: 24px;
 	color: #fff;
 }
 
@@ -900,7 +898,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .infor-form input {
 	width: 100%;
 	height: 49px;
-	font-size: 14px;
 	padding-left: 29px;
 	padding-right: 60px;
 	border: 1px solid #e6e6e6;
@@ -990,7 +987,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	display: block;
 	color: #fff;
 	width: 100%;
-	font-size: 18px;
 	margin-bottom: 20px;
 	opacity: 1;
 	filter: alpha(opacity=50);
@@ -1120,25 +1116,18 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	}
 }
 
-.hs-text h2 {
+.hs-text h1 {
 	text-transform: uppercase;
-	font-size: 50px;
 	color: #fff;
 	
 	line-height: 1.3;
 	margin-bottom: 20px;
 }
 
-@media (max-width: 576px) {
-	.hs-text h2 {
-		font-size: 30px;
-	}
-}
 
 .hs-text p {
-	font-size: 15px;
 	color: #fff;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 
 @media (max-width: 576px) {
@@ -1257,7 +1246,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .hs-style-3 {
-	padding-top: 160px;
+	padding-top: 200px;
 	position: relative;
 	height: 100%;
 }
@@ -1400,7 +1389,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	right: 70px;
 	top: 55px;
 	padding: 5px;
-	font-size: 23px;
 	color: #fff;
 	cursor: pointer;
 	z-index: 999;
@@ -1416,7 +1404,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .search-moderl-form input {
 	width: 100%;
 	height: 40px;
-	font-size: 20px;
 	color: #fff;
 	padding-bottom: 15px;
 	border: none;
@@ -1495,13 +1482,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .about-item .ai-text h4 {
-	font-weight: 500;
 
 	margin-bottom: 15px;
 }
 
 .about-item .ai-text p {
-	font-size: 15px;
 	margin-bottom: 0;
 }
 
@@ -1602,7 +1587,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .classes-item h4 {
 
-	font-weight: 500;
 	margin-bottom: 15px;
 }
 
@@ -1616,7 +1600,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .classes-item .ci-meta {
 	display: inline-block;
-	font-size: 14px;
 	color: #666666;
 	margin-right: 10px;
 	margin-bottom: 15px;
@@ -1628,7 +1611,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .classes-item .ci-meta i {
 	color: #f65d5d;
-	font-size: 15px;
 	margin-right: 10px;
 }
 
@@ -1662,10 +1644,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 	overflow: hidden;
 }
 
-.classes-item .ci-author h6 {
 
-	font-weight: 500;
-}
 
 .classes-item .ci-author p {
 	color: #f65d5d;
@@ -1674,9 +1653,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .classes-item .site-btn {
 	
-	font-size: 14px;
 	padding: 11px 0px;
-	min-width: 124px;
+	
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px),
@@ -1703,7 +1681,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .circle-select .current {
-	font-size: 14px;
 	color: #999999;
 }
 
@@ -1745,7 +1722,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .classes-filter h3 {
-	font-size: 20px;
 	margin-bottom: 20px;
 	padding-top: 10px;
 }
@@ -1766,7 +1742,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .classes-filter .cf-radio label {
-	font-size: 15px;
 	color: #999999;
 	padding-left: 27px;
 	position: relative;
@@ -1865,8 +1840,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .pc-item .pc-text h4 {
-	font-size: 20px;
-	font-weight: 500;
 
 	margin-bottom: 15px;
 }
@@ -1887,13 +1860,11 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .pc-item .pc-text ul li {
-	font-size: 14px;
 	margin-bottom: 5px;
 }
 
 .pc-item .pc-text ul li i {
 	color: #f65d5d;
-	font-size: 15px;
 	position: relative;
 	top: 3px;
 	margin-right: 10px;
@@ -2058,7 +2029,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .trainer-item h4 {
-	font-weight: 500;
 
 	margin-bottom: 10px;
 }
@@ -2091,7 +2061,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding-top: 6px;
 	margin-right: 6px;
 	margin-bottom: 14px;
-	font-size: 15px;
 	text-align: center;
 	color: #616161;
 	background: #f2f4f5;
@@ -2200,20 +2169,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .review-item p {
-	font-size: 18px;
 	margin-bottom: 50px;
 }
 
 .review-item h4 {
-	font-weight: 500;
 
-	font-weight: 500;
 	margin-bottom: 12px;
 }
 
-.review-item h6 {
-	font-weight: 500;
-}
+
 
 /*------------------
   Event section
@@ -2281,7 +2245,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .event-item .ei-text {
 	overflow: hidden;
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-right: 15px;
 }
 
@@ -2298,7 +2262,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .event-item .ei-text h4 {
-	font-weight: 500;
 
 	margin-bottom: 15px;
 }
@@ -2319,13 +2282,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .event-item .ei-text ul li {
-	font-size: 14px;
 	margin-bottom: 5px;
 }
 
 .event-item .ei-text ul li i {
 	color: #f65d5d;
-	font-size: 15px;
 	position: relative;
 	top: 3px;
 	margin-right: 10px;
@@ -2413,14 +2374,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	border-radius: 50px;
 	border: 1px solid #e6e6e6;
 	background: #fafafa;
-	font-size: 14px;
 }
 
 .event-filter-form .ef-item i {
 	position: absolute;
 	right: 20px;
 	top: 16px;
-	font-size: 15px;
 	color: #a6a6a6;
 }
 
@@ -2468,8 +2427,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .pricing-item .pi-top h4 {
 
 	color: #fff;
-	font-size: 22px;
-	font-weight: 500;
 	text-transform: uppercase;
 }
 
@@ -2485,8 +2442,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .pricing-item .pi-price h3 {
-	font-size: 40px;
-	font-weight: 700;
 	color: #666666;
 }
 
@@ -2501,7 +2456,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .pricing-item ul li {
-	font-size: 15px;
 	color: #666666;
 	margin-bottom: 12px;
 }
@@ -2559,7 +2513,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .singup-text h3 {
-	font-weight: 500;
 
 	margin-bottom: 15px;
 }
@@ -2569,7 +2522,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	width: 100%;
 	height: 49px;
 	padding: 5px 28px;
-	font-size: 14px;
 	color: #999999;
 	border-radius: 50px;
 	margin-bottom: 20px;
@@ -2634,29 +2586,20 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .gs-item .gs-hover i {
-	font-size: 26px;
 	color: #fff;
 	margin-bottom: 5px;
 }
 
 @media (max-width: 576px) {
-	.gs-item .gs-hover i {
-		font-size: 18px;
-	}
+	
 }
 
 .gs-item .gs-hover p {
-	font-size: 25px;
 
 	color: #fff;
 	margin-bottom: 0;
 }
 
-@media (max-width: 576px) {
-	.gs-item .gs-hover p {
-		font-size: 15px;
-	}
-}
 
 .gs-item:hover .gs-hover {
 	padding-top: 10px;
@@ -2686,7 +2629,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .footer-widget .fw-title {
-	font-size: 20px;
 	margin-bottom: 30px;
 	padding-top: 10px;
 	text-transform: uppercase;
@@ -2697,13 +2639,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .footer-widget ul li {
-	font-size: 15px;
 	color: #666666;
 	margin-bottom: 10px;
 }
 
 .footer-widget ul li i {
-	font-size: 18px;
 	color: #f65d5d;
 	position: relative;
 	top: 3px;
@@ -2746,7 +2686,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .copyright {
-	font-size: 14px;
 	color: #666666;
 }
 
@@ -2763,7 +2702,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .copyright a {
 	color: #666666;
-	font-weight: 600;
 }
 
 .copyright a:hover {
@@ -2807,13 +2745,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .page-top-section h2 {
-	font-size: 45px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
 
 .page-top-section p {
-	font-size: 18px;
 }
 
 /*--------------
@@ -2866,7 +2802,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .single-progress-item p {
-	font-size: 15px;
 	color: #616161;
 	line-height: 1;
 	margin-bottom: 15px;
@@ -2889,7 +2824,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	position: absolute;
 	bottom: 100%;
 	right: -18px;
-	font-size: 14px;
 	color: #fff;
 	line-height: 1;
 	margin-bottom: 15px;
@@ -2931,7 +2865,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .classes-details h2 {
-	font-size: 30px;
 	margin-bottom: 10px;
 }
 
@@ -2952,7 +2885,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .classes-details .cd-meta i {
-	font-size: 20px;
 	color: #f65d5d;
 	margin-right: 10px;
 	position: relative;
@@ -2967,7 +2899,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .classes-details .cd-price {
 	display: inline-block;
 	padding: 0px 18px 5px;
-	font-size: 30px;
 
 	color: #fff;
 	background: #f65d5d;
@@ -2982,7 +2913,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .classes-details blockquote {
 	margin-top: 60px;
 	font-style: italic;
-	font-size: 15px;
 	color: #666666;
 	padding-right: 20px;
 	line-height: 1.8;
@@ -3001,7 +2931,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .classes-details h3 {
-	font-size: 20px;
 	margin-bottom: 20px;
 }
 
@@ -3013,7 +2942,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	position: relative;
 	padding-left: 29px;
 	margin-bottom: 5px;
-	font-size: 15px;
 	color: #666666;
 }
 
@@ -3022,11 +2950,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	left: 0;
 	top: 3px;
 	color: #f65d5d;
-	font-size: 15px;
 }
 
 .classes-details .cd-cata i {
-	font-size: 20px;
 	color: #f65d5d;
 	margin-right: 10px;
 	position: relative;
@@ -3045,7 +2971,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding-top: 6px;
 	margin-right: 6px;
 	margin-bottom: 14px;
-	font-size: 15px;
 	text-align: center;
 	color: #616161;
 	background: #f2f4f5;
@@ -3116,7 +3041,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .comment-title {
-	font-size: 25px;
 	margin-bottom: 50px;
 	text-transform: uppercase;
 }
@@ -3184,14 +3108,12 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .comment-list .comment-text h3 {
 	display: inline-block;
-	font-size: 20px;
 	margin-right: 20px;
 	margin-bottom: 10px;
 }
 
 .comment-list .comment-text .comment-date {
 	display: inline-block;
-	font-size: 14px;
 	color: #666666;
 	margin-bottom: 10px;
 }
@@ -3199,7 +3121,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .comment-list .comment-text .comment-date i {
 	color: #f65d5d;
 	position: relative;
-	font-size: 15px;
 	top: 3px;
 	margin-right: 10px;
 }
@@ -3208,14 +3129,11 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	display: inline-block;
 	color: #f65d5d;
 	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 600;
 	margin-bottom: 35px;
 }
 
 .comment-list .comment-text .reply i {
 	position: relative;
-	font-size: 15px;
 	top: 3px;
 	margin-right: 10px;
 }
@@ -3267,7 +3185,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .classes-info ul li {
-	font-size: 15px;
 	color: #666666;
 	padding-left: 25px;
 	position: relative;
@@ -3276,7 +3193,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .classes-info ul li i {
 	position: absolute;
-	font-size: 15px;
 	left: 0;
 	top: 3px;
 	color: #f65d5d;
@@ -3295,7 +3211,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .about-instructor-widget h4 {
-	font-weight: 500;
 
 	margin-bottom: 10px;
 }
@@ -3319,7 +3234,6 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	padding-top: 6px;
 	margin-right: 6px;
 	margin-bottom: 14px;
-	font-size: 15px;
 	text-align: center;
 	color: #666666;
 	background: #f2f4f5;
@@ -3388,7 +3302,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding-top: 6px;
 	margin-right: 6px;
 	margin-bottom: 14px;
-	font-size: 15px;
 	text-align: center;
 	color: #616161;
 	background: #f2f4f5;
@@ -3447,7 +3360,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	float: left;
 	width: 112px;
 	color: #666666;
-	font-weight: 600;
 }
 
 @media (max-width: 420px) {
@@ -3459,7 +3371,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .trainer-details .trainer-info ul p {
-	font-size: 15px;
 	overflow: hidden;
 	margin-bottom: 0;
 }
@@ -3479,13 +3390,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .trainer-details-text h3 {
-	font-size: 20px;
 	margin-bottom: 16px;
 }
 
 .trainer-details-text p {
 	margin-bottom: 22px;
-	font-size: 15px;
 }
 
 .trainer-details-text ul {
@@ -3500,7 +3409,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .trainer-details-text ul li {
-	font-size: 15px;
 	color: #666666;
 	padding-left: 21px;
 	margin-bottom: 5px;
@@ -3511,7 +3419,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	position: absolute;
 	left: 0;
 	top: 4px;
-	font-size: 15px;
 	color: #f65d5d;
 }
 
@@ -3531,7 +3438,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .event-details h2 {
-	font-size: 30px;
 	margin-bottom: 10px;
 }
 
@@ -3560,7 +3466,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .event-details .ed-meta i {
-	font-size: 20px;
 	color: #f65d5d;
 	margin-right: 10px;
 	position: relative;
@@ -3575,13 +3480,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .event-details .ed-note {
 	display: inline-block;
 	padding: 10px 17px;
-	font-size: 14px;
 	color: #fff;
 	text-transform: uppercase;
 	border-radius: 7px;
 	margin-bottom: 60px;
 	background: #8abe56;
-	font-weight: 600;
 	line-height: 1.2;
 	margin-top: 5px;
 }
@@ -3591,7 +3494,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .event-details h3 {
-	font-size: 20px;
 	margin-bottom: 20px;
 }
 
@@ -3603,7 +3505,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	position: relative;
 	padding-left: 29px;
 	margin-bottom: 5px;
-	font-size: 15px;
 	color: #666666;
 }
 
@@ -3612,11 +3513,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	left: 0;
 	top: 3px;
 	color: #f65d5d;
-	font-size: 15px;
 }
 
 .event-details .ed-cata i {
-	font-size: 20px;
 	color: #f65d5d;
 	margin-right: 10px;
 	position: relative;
@@ -3635,7 +3534,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding-top: 6px;
 	margin-right: 6px;
 	margin-bottom: 14px;
-	font-size: 15px;
 	text-align: center;
 	color: #666666;
 	background: #f2f4f5;
@@ -3706,7 +3604,6 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 }
 
 .event-other-slider .event-item .ei-text h4 {
-	font-size: 20px;
 }
 
 /*-------------
@@ -3741,7 +3638,6 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 }
 
 .blog-item .bi-text h2 {
-	font-size: 25px;
 	margin-bottom: 15px;
 }
 
@@ -3770,7 +3666,6 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 
 .blog-item .bi-cata {
 	float: left;
-	font-size: 14px;
 	color: #666666;
 	position: relative;
 	padding-left: 12px;
@@ -3827,7 +3722,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .sb-widget .sb-title {
-	font-size: 20px;
 	text-transform: uppercase;
 	margin-bottom: 25px;
 }
@@ -3873,7 +3767,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	border: 1px solid #e8e8e8;
 	border-radius: 50px;
 	margin-right: 10px;
-	font-size: 14px;
 	margin-bottom: 5px;
 }
 
@@ -3882,7 +3775,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .site-pagination a i {
-	font-size: 18px;
 }
 
 .site-pagination a.active {
@@ -3918,7 +3810,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .blog-details h2 {
-	font-size: 30px;
 	margin-bottom: 15px;
 }
 
@@ -3947,7 +3838,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .blog-details .blog-meta i {
-	font-size: 20px;
 	color: #f65d5d;
 	margin-right: 10px;
 	position: relative;
@@ -3967,7 +3857,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	margin-left: 75px;
 	margin-top: 40px;
 	font-style: italic;
-	font-size: 15px;
 	color: #666666;
 	padding-right: 20px;
 	line-height: 1.8;
@@ -3992,7 +3881,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .blog-details h3 {
-	font-size: 20px;
 	margin-bottom: 15px;
 }
 
@@ -4004,7 +3892,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	position: relative;
 	padding-left: 29px;
 	margin-bottom: 5px;
-	font-size: 15px;
 	color: #666666;
 }
 
@@ -4013,11 +3900,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	left: 0;
 	top: 3px;
 	color: #f65d5d;
-	font-size: 15px;
 }
 
 .blog-details .ed-cata i {
-	font-size: 20px;
 	color: #f65d5d;
 	margin-right: 10px;
 	position: relative;
@@ -4036,7 +3921,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding-top: 6px;
 	margin-right: 6px;
 	margin-bottom: 14px;
-	font-size: 15px;
 	text-align: center;
 	color: #666666;
 	background: #f2f4f5;
@@ -4113,12 +3997,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .blog-author .ba-text h3 {
-	font-size: 20px;
 	margin-bottom: 10px;
 }
 
 .blog-author .ba-text p {
-	font-size: 15px;
 	margin-bottom: 10px;
 }
 
@@ -4139,13 +4021,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .blog-nav h3 {
-	font-size: 18px;
 }
 
 .blog-nav i {
 	position: absolute;
 	top: 5px;
-	font-size: 35px;
 	color: #f65d5d;
 }
 
@@ -4177,7 +4057,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	border-radius: 41px;
 	border: 1px solid #e6e6e6;
 	background: #fafafa;
-	font-size: 14px;
 }
 
 .sb-widget .search-form button {
@@ -4192,7 +4071,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .sb-widget .search-form button i {
-	font-size: 18px;
 }
 
 .sb-widget ul.sb-list {
@@ -4202,7 +4080,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .sb-widget ul.sb-list li a {
 	display: inline-block;
-	font-size: 15px;
 	color: #666666;
 	margin-bottom: 12px;
 }
@@ -4218,7 +4095,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	margin-right: 6px;
 	margin-bottom: 10px;
 	color: #666666;
-	font-size: 15px;
 	border: 1px solid #e6e6e6;
 	background: #fafafa;
 }
@@ -4249,7 +4125,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .latest-post-widget .lp-text h3 {
-	font-size: 17px;
 	margin-bottom: 5px;
 }
 
@@ -4260,7 +4135,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .latest-post-widget .lp-text i {
 	position: relative;
 	color: #f65d5d;
-	font-size: 15px;
 	top: 3px;
 	margin-right: 10px;
 }
@@ -4332,7 +4206,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .insta-widget .insta-hover i {
-	font-size: 18px;
 	color: #fff;
 }
 
@@ -4364,7 +4237,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .con-info h3 {
-	font-size: 18px;
 	margin-bottom: 14px;
 }
 
@@ -4382,7 +4254,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .con-info ul i {
 	position: absolute;
-	font-size: 15px;
 	left: 0;
 	top: 3px;
 	color: #f65d5d;
@@ -4395,7 +4266,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding-top: 6px;
 	margin-right: 6px;
 	margin-bottom: 14px;
-	font-size: 15px;
 	text-align: center;
 	color: #666666;
 	background: #f2f4f5;
@@ -4453,7 +4323,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
   letter-spacing: 0.2rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  font-weight: 650;
 }
 
 
@@ -4484,7 +4353,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
     width: 100%;
     height: 49px;
     padding: 5px 28px;
-    font-size: 14px;
     color: #999999;
     border-radius: 50px;
     margin-bottom: 20px;
@@ -4498,8 +4366,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
     height: calc(1.5em + .75rem + 2px);
 	padding: .375rem 1.75rem .375rem .75rem;
 	margin-left: -0.5rem;
-	font-size: 0.9rem;
-    font-weight: 400;
 	line-height: 1.5;
 	color: #7f7578;
     vertical-align: middle;
@@ -4530,8 +4396,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .custom-underline {
 	position: relative;
 	display: inline-block;
-	font-size: 24px;
-	font-weight: 400;
 	text-align: center;
   }
 
@@ -4574,8 +4438,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 
   .hrtop{
-	  border-top: 2px solid #fff;
-	  width: 5rem;
+	  border-top: 5px solid #fff;
+	  width: 7rem;
   }
 
 
@@ -4594,13 +4458,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	.about .about-content h2 {
 	color: #616161;
 	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
 	}
 	
 	.about .about-content h3 {
 	color: #696592;
-	font-weight: 400;
-	font-size: 22px;
 	font-style: italic;
 	}
 	
@@ -4614,7 +4475,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	}
 	
 	.about .about-content ul li i {
-	font-size: 20px;
 	padding-right: 4px;
 	color:black;
 	}
@@ -4664,9 +4524,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	/* hr styling */
 	
 .lines{
-	width: 7rem;
+	width: 6rem;
 	margin-top: 0.8rem;
-	border-top: 0.5rem solid #f65d5d;
+	border-top: 0.3rem solid #f65d5d;
 	
 }
 
@@ -4678,8 +4538,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
   
   #call-to-action .cta-title {
     color: #fff;
-    font-size: 28px;
-    font-weight: 700;
   }
   
   #call-to-action .cta-text {
@@ -4688,8 +4546,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
   
   #call-to-action .cta-btn {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
     padding: 8px 26px;
