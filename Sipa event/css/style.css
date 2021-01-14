@@ -47,7 +47,7 @@ h1{
 
 h2{
 	font-weight: 500;
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 }
 
 h4{
@@ -4070,8 +4070,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	padding-top: 5px;
 }
 
-.sb-widget .search-form button i {
-}
 
 .sb-widget ul.sb-list {
 	list-style: none;
@@ -4457,7 +4455,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	
 	.about .about-content h2 {
 	color: #616161;
-	font-family: "Montserrat", sans-serif;
+
 	}
 	
 	.about .about-content h3 {
@@ -4520,7 +4518,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	transition: .5s;
 	}
 	
-	
+	@media (max-width: 768px) {
+		.about .about-img {
+			position: relative;
+			margin: 50px;
+		}
+	}
 	/* hr styling */
 	
 .lines{
@@ -4545,7 +4548,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   }
   
   #call-to-action .cta-btn {
-    font-family: "Montserrat", sans-serif;
+
     letter-spacing: 1px;
     display: inline-block;
     padding: 8px 26px;
