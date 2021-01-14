@@ -21,6 +21,27 @@ body {
 
 }
 
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #fffff7;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background:  #f65d5d;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #fdb07d; 
+  }
+
+
 h1,
 h2,
 h3,
