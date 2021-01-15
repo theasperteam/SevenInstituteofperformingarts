@@ -1,13 +1,4 @@
-/* =================================
-------------------------------------
-  Ahana | Yoga HTML Template
-  Version: 1.0
- ------------------------------------
- ====================================*/
 
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
@@ -1562,6 +1553,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .classes-item .ci-img img {
 	width: 280px;
 	height: 280px;
+	object-fit: cover;
 	border-radius: 50%;
 	margin: 0 auto 25px;
 }
@@ -2718,9 +2710,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 ==================*/
 
 .page-top-section {
-	height: 478px;
+	height: 378px;
 	position: relative;
-	padding-top: 220px;
+	padding-top: 150px;
 	text-align: center;
 }
 
