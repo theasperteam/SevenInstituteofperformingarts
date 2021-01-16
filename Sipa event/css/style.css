@@ -4305,14 +4305,14 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
 	height: auto;
-	width: 4.5rem;
+
 	max-width: 100%;
 
 }
 .img-blob.blob1 img {
 	-webkit-mask-box-image: url(../img/blob1.svg);
 	mask-image: url(../img/blob1.svg);
-	
+	-webkit-mask-box-image-repeat: unset;
 } 
 
 .textcolor{
