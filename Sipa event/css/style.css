@@ -4312,7 +4312,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .img-blob.blob1 img {
 	-webkit-mask-box-image: url(../img/blob1.svg);
 	mask-image: url(../img/blob1.svg);
-
+	
 } 
 
 .textcolor{
