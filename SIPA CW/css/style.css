@@ -2168,11 +2168,7 @@ hr.lines:before {
     flex-wrap: wrap;
     transition: 0.5s;
 }
-.PACardContainer:hover .PACard
-{
-    filter: blur(5px);
-    transform: scale(.7);
-}
+
 .PACardContainer .PACard
 {
     position: relative;
