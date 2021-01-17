@@ -2623,9 +2623,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	margin-bottom: 30px;
 }
 
-.footer-widget .about-widget {
-	max-width: 280px;
-}
+
 
 .footer-widget .about-widget img {
 	margin-bottom: 30px;
