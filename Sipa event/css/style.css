@@ -189,6 +189,10 @@ ol {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f65d5d", endColorstr="#fdb07d", GradientType=1);
 }
 
+.successful:after{
+	background: transparent !important;
+}
+
 .bg-g-2,
 .infor-form button,
 .site-btn.sb-line-gradient,
@@ -4563,3 +4567,46 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	color: #f65d5d;
     border: 3px solid linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);;
   }
+
+
+  .successful .owl-dot{
+	  background: #f65d5d !important;
+  }
+
+
+  
+.successful figure.image {
+	display: inline-block;
+	position: relative;
+  }
+  
+  .successful figure img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+  }
+  
+ .successful  figcaption {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+   border-radius: 20px;
+	padding: .5em 0;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	
+  }
+  
+  .successful figcaption span {
+	font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: 1200px) and (min-width: 992px), only screen and (max-width: 1440px) and (min-width: 1200px), only screen and (max-width: 991px) and (min-width: 768px), only screen and (max-width: 767px) and (min-width: 576px), (max-width: 576px)
+{
+
+.trainer-slider .owl-nav {
+    text-align: center;
+    padding-top: 0px;
+}
+}
