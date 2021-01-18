@@ -1260,8 +1260,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .hs-style-3 .hs-text {
-	margin: 0 auto;
-	max-width: 810px;
+
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 }
 
 .hs-style-3 .hs-img {
@@ -2594,7 +2598,18 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 @media (max-width: 576px) {
-	
+	.footer-widget {
+		margin-bottom: 0px !important;
+	}
+	.footer-section {
+		padding-top: 30px !important;
+		padding-bottom: 30px !important;
+		padding: 1rem !important;
+	}
+	.footer-widget .about-widget img {
+		margin-bottom: 0px !important;
+		height: 15rem !important;
+	}
 }
 
 .gs-item .gs-hover p {
